@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87081820ac57c744d8899f54e7476adc, type: 3}
+  m_Name: CornerPillar270
+  m_EditorClassIdentifier: Assembly-CSharp::PatternMatchingDecoratorRule
+  roomTypes: 0
+  prefab: {fileID: 8021531883433345482, guid: bb9fa583698bef948a28f5e0237a343b, type: 3}
+  prefabRotation: 270
+  placement:
+    array: 04000000040000000200000004000000
+    width: 2
+    height: 2
+  fill:
+    array: 04000000040000000300000004000000
+    width: 2
+    height: 2
+  centerHorizontally: 0
+  centerVertically: 0
