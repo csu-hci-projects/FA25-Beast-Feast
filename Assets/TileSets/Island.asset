@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d156f4a51643f1948b6e6375be80df61, type: 3}
+  m_Name: Island
+  m_EditorClassIdentifier: Assembly-CSharp::TileSet
+  wallColor: {r: 0, g: 0, b: 0, a: 0}
+  tiles:
+  - variants:
+    - {fileID: 8663752698871267635, guid: 305740d8eba27a14699096732593c2c1, type: 3}
+  - variants:
+    - {fileID: 8934223972427977933, guid: 2cd9330fa82612443a64672655821c2b, type: 3}
+  - variants:
+    - {fileID: 8934223972427977933, guid: 1475b1094d7715249bdcc6f965fce8eb, type: 3}
+  - variants:
+    - {fileID: 4354834733306422862, guid: d287a09ab6cd11d42ae22327ad35642b, type: 3}
+  - variants:
+    - {fileID: 8934223972427977933, guid: 203a3b69019cf544c847bbc6eaa1bfe9, type: 3}
+  - variants:
+    - {fileID: 4354834733306422862, guid: ce5ef2355449a4e4a9249cac9659011d, type: 3}
+  - variants:
+    - {fileID: 8582798053814325851, guid: 1314364ef337a504c8e593153905f4ef, type: 3}
+  - variants:
+    - {fileID: 8582798053814325851, guid: 0689f4437cc5ccf4bab2be5f49c7d88e, type: 3}
+  - variants:
+    - {fileID: 8934223972427977933, guid: 37fb1e4ae42abb1488cf4155f64f2411, type: 3}
+  - variants:
+    - {fileID: 8582798053814325851, guid: d75242df4f807134ead44a54fd2b4a63, type: 3}
+  - variants:
+    - {fileID: 4354834733306422862, guid: ea756adf9566ee84e9f18d65d14163fe, type: 3}
+  - variants:
+    - {fileID: 8582798053814325851, guid: b5bd7cc08f595944fa70feeb2645efde, type: 3}
+  - variants:
+    - {fileID: 4354834733306422862, guid: 83f2028a16d82e34293982249e42bb81, type: 3}
+  - variants:
+    - {fileID: 8582798053814325851, guid: 0ffc9676cfcbea04e9bc0a99253e6ac9, type: 3}
+  - variants:
+    - {fileID: 8582798053814325851, guid: e7f5376545eb49240880a289dba9743b, type: 3}
+  - variants:
+    - {fileID: 0}

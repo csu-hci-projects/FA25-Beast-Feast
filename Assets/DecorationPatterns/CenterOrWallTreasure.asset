@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e62afec9787fc4fa1d8ea6c80f3828, type: 3}
+  m_Name: CenterOrWallTreasure
+  m_EditorClassIdentifier: Assembly-CSharp::OrDecoratorRule
+  roomTypes: 16
+  childRules:
+  - {fileID: 11400000, guid: 8a800ceefa0d0004888597ffaff50ce3, type: 2}
+  - {fileID: 11400000, guid: 04fc40d5d2e963c4e8a0855a3754c8f0, type: 2}

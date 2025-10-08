@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91613231c8bec6e49b68761200e58f9e, type: 3}
+  m_Name: Level2
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLevelLayoutConfiguration
+  width: 64
+  length: 64
+  roomTemplates:
+  - name: Small Room
+    numberOfRooms: 10
+    roomWidthMin: 7
+    roomWidthMax: 10
+    roomLengthMin: 10
+    roomLengthMax: 15
+    layoutTexture: {fileID: 0}
+  - name: Large Room
+    numberOfRooms: 5
+    roomWidthMin: 20
+    roomWidthMax: 30
+    roomLengthMin: 20
+    roomLengthMax: 30
+    layoutTexture: {fileID: 0}
+  - name: Special Room 1
+    numberOfRooms: 1
+    roomWidthMin: 13
+    roomWidthMax: 18
+    roomLengthMin: 13
+    roomLengthMax: 18
+    layoutTexture: {fileID: 2800000, guid: a376f5b95226c58429656cae2eafb9ce, type: 3}
+  - name: Special Room 2
+    numberOfRooms: 1
+    roomWidthMin: 13
+    roomWidthMax: 18
+    roomLengthMin: 13
+    roomLengthMax: 18
+    layoutTexture: {fileID: 2800000, guid: eeeaf377a3ba9714eac62f01a31461ca, type: 3}
+  - name: Special Room 3
+    numberOfRooms: 1
+    roomWidthMin: 13
+    roomWidthMax: 18
+    roomLengthMin: 13
+    roomLengthMax: 18
+    layoutTexture: {fileID: 2800000, guid: b39c6364ade276046956bfbfe646f364, type: 3}
+  - name: Special Room 4
+    numberOfRooms: 1
+    roomWidthMin: 13
+    roomWidthMax: 18
+    roomLengthMin: 13
+    roomLengthMax: 18
+    layoutTexture: {fileID: 2800000, guid: 13e0fb1309bc3e34c9516e6b59fef4e5, type: 3}
+  - name: Special Room 5
+    numberOfRooms: 1
+    roomWidthMin: 13
+    roomWidthMax: 18
+    roomLengthMin: 13
+    roomLengthMax: 18
+    layoutTexture: {fileID: 2800000, guid: 5fbe3e38f5a20f442bb7dfc011c7954d, type: 3}
+  doorDistanceFromEdge: 1
+  hallwayLengthMin: 2
+  hallwayLengthMax: 5
+  maxRoomCount: 20
+  minRoomDistance: 1
