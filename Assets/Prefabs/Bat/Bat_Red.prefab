@@ -520,9 +520,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010273486942}
   - component: {fileID: 95000011442643512}
-  - component: {fileID: 5822060017129514793}
   - component: {fileID: 5038789418703801354}
   - component: {fileID: 3613099819343150132}
+  - component: {fileID: -5398257087697727474}
+  - component: {fileID: 7090555389393142115}
   m_Layer: 0
   m_Name: Bat_Red
   m_TagString: Untagged
@@ -569,21 +570,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5822060017129514793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011593744314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd19da554367df428beaf04e91ab47b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeastControllerTest
-  moveSpeed: 2
-  turnSpeed: 10
-  rotate: 0
 --- !u!136 &5038789418703801354
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -634,6 +620,44 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!195 &-5398257087697727474
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011593744314}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.01
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &7090555389393142115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011593744314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d5b7c13fb8c6444a1ca75dffbd744a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAi
+  wanderRadius: 10
+  wanderTimer: 5
+  playerRadius: 8
+  attackRadius: 2
 --- !u!1 &1000011643250032
 GameObject:
   m_ObjectHideFlags: 0

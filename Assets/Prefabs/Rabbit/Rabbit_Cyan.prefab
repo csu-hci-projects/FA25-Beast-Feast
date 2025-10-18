@@ -786,7 +786,8 @@ GameObject:
   - component: {fileID: 95000013350495782}
   - component: {fileID: 8200575459856609807}
   - component: {fileID: 7979183713216622720}
-  - component: {fileID: 4956566182895933874}
+  - component: {fileID: -7109606221896293331}
+  - component: {fileID: -1132066410840170994}
   m_Layer: 0
   m_Name: Rabbit_Cyan
   m_TagString: Untagged
@@ -883,7 +884,29 @@ CapsuleCollider:
   m_Height: 0.04
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4956566182895933874
+--- !u!195 &-7109606221896293331
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014069041812}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.01
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &-1132066410840170994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -892,12 +915,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000014069041812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd19da554367df428beaf04e91ab47b, type: 3}
+  m_Script: {fileID: 11500000, guid: b8d5b7c13fb8c6444a1ca75dffbd744a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeastControllerTest
-  moveSpeed: 2
-  turnSpeed: 10
-  rotate: 0
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAi
+  wanderRadius: 10
+  wanderTimer: 5
+  playerRadius: 8
+  attackRadius: 2
 --- !u!1 &1000014181304996
 GameObject:
   m_ObjectHideFlags: 0
