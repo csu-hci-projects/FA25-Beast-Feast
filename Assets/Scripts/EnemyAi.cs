@@ -3,69 +3,70 @@ using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
-    [SerializeField] Transform player;
-    private NavMeshAgent navMeshAgent;
-    [SerializeField] LayerMask playerLayer, groundLayer;
+    [SerializeField] float wanderRadius = 10f;
+    [SerializeField] float wanderTimer = 5f;
+    [SerializeField] float playerRadius = 8f;
+    [SerializeField] float attackRadius = 2f;
 
-    private Vector3 walkPoint;
-    bool walkPointSet;
-    [SerializeField] float walkPointRange;
+    private NavMeshAgent agent;
+    private float timer;
+    private Transform player;
+    private Animator animator;
 
-    [SerializeField] float sightRange;
-    bool playerInSightRange;
-
-    void Start()
+    void OnEnable()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        timer = wanderTimer;
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
     }
 
     void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
+        if (player != null)
+        {
+            float distance = Vector3.Distance(transform.position, player.position);
 
-        if (!playerInSightRange)
-        {
-            Patrol();
+            if (distance <= playerRadius)
+            {
+                agent.SetDestination(player.position);
+
+                if (distance <= attackRadius)
+                {
+                    agent.isStopped = true;
+                    animator.SetTrigger("AttackTrigger");
+                }
+                else
+                {
+                    agent.isStopped = false;
+                }
+            }
+            else
+            {
+                timer += Time.deltaTime;
+                if (timer >= wanderTimer)
+                {
+                    Vector3 newPos = GetRandomPosition(transform.position, wanderRadius, -1);
+                    agent.SetDestination(newPos);
+                    timer = 0;
+                }
+            }
         }
-        if (playerInSightRange)
-        {
-            ChasePlayer();
-        }
+        Vector3 velocity = agent.velocity;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        float speed = localVelocity.z;
+        animator.SetFloat("forwardSpeed", speed);
     }
 
-    private void Patrol()
+    public static Vector3 GetRandomPosition(Vector3 origin, float dist, int layermask)
     {
-        if (!walkPointSet)
-        {
-            SearchWalkPoint();
-        }
-        if (walkPointSet)
-        {
-            navMeshAgent.SetDestination(walkPoint);
-        }
-        Vector3 distance = transform.position - walkPoint;
-
-        if (distance.magnitude < 1f)
-        {
-            walkPointSet = false;
-        }
-    }
-
-    private void ChasePlayer()
-    {
-        navMeshAgent.SetDestination(player.position);
-    }
-
-    private void SearchWalkPoint()
-    {
-        float randomZPoint = Random.Range(-walkPointRange, walkPointRange);
-        float randomXPoint = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomXPoint, transform.position.y, transform.position.z + randomZPoint);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, groundLayer))
-        {
-            walkPointSet = true;
-        }
+        Vector3 randDirection = Random.insideUnitSphere * dist;
+        randDirection += origin;
+        NavMesh.SamplePosition(randDirection, out NavMeshHit navHit, dist, layermask);
+        return navHit.position;
     }
 }
