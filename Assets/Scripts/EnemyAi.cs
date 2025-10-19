@@ -59,7 +59,7 @@ public class EnemyAi : MonoBehaviour
         Vector3 velocity = agent.velocity;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         float speed = localVelocity.z;
-        animator.SetFloat("forwardSpeed", speed);
+        animator.SetFloat("Speed", speed);
     }
 
     public static Vector3 GetRandomPosition(Vector3 origin, float dist, int layermask)

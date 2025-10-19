@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.606
+      value: 0.7623106
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.303
+      value: 0.224
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.545
+      value: 1.0338991
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3625599040093254478, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.277
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
       propertyPath: m_Name
       value: Snail
@@ -67,7 +71,13 @@ PrefabInstance:
       addedObject: {fileID: 7624330495536272637}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3012035818272575264}
+      addedObject: {fileID: 2335913977414899794}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9069333016839802375}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4402480200294131682}
   m_SourcePrefab: {fileID: 100100000, guid: d31ea45843db9734fb34b2427cfe2fbe, type: 3}
 --- !u!1 &8217183955947039479 stripped
 GameObject:
@@ -146,7 +156,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3012035818272575264
+--- !u!195 &2335913977414899794
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217183955947039479}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.05
+  m_Speed: 2
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &9069333016839802375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,9 +187,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 8217183955947039479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd19da554367df428beaf04e91ab47b, type: 3}
+  m_Script: {fileID: 11500000, guid: 40f018a03c0fd9c4688fe94d539dfbc4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeastControllerTest
-  moveSpeed: 2
-  turnSpeed: 10
-  rotate: 1
+  m_EditorClassIdentifier: Assembly-CSharp::PassiveAi
+  wanderRadius: 10
+  wanderTimer: 9
+  avoidRadius: 10
+  avoidStrength: 12
+--- !u!114 &4402480200294131682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217183955947039479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75415d89555ea234d94c89c733a721d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NavMeshSnapper
+  maxSample: 5
+  snapOffset: 0.01

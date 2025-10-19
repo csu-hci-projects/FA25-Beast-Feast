@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.113
+      value: -7.592405
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000047683716
+      value: 0.0000019073486
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.516
+      value: 2.514
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,7 +67,13 @@ PrefabInstance:
       addedObject: {fileID: 5165824134145387666}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3360007244072908963}
+      addedObject: {fileID: 3700135060212726695}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4617255347009006627}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6947482154157582739}
   m_SourcePrefab: {fileID: 100100000, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
 --- !u!1 &2427960109665900039 stripped
 GameObject:
@@ -146,7 +152,7 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3360007244072908963
+--- !u!114 &3700135060212726695
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,9 +161,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 2427960109665900039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd19da554367df428beaf04e91ab47b, type: 3}
+  m_Script: {fileID: 11500000, guid: 40f018a03c0fd9c4688fe94d539dfbc4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeastControllerTest
-  moveSpeed: 2
-  turnSpeed: 10
-  rotate: 0
+  m_EditorClassIdentifier: Assembly-CSharp::PassiveAi
+  wanderRadius: 20
+  wanderTimer: 8
+  avoidRadius: 5
+  avoidStrength: 20
+--- !u!195 &-4617255347009006627
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427960109665900039}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.01
+  m_Speed: 10
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6947482154157582739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427960109665900039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75415d89555ea234d94c89c733a721d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NavMeshSnapper
+  maxSample: 5
+  snapOffset: 0.01
