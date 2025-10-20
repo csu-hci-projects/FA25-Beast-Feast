@@ -71,9 +71,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 835896196902472996}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 612913004595889742}
   m_SourcePrefab: {fileID: 100100000, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
 --- !u!1 &7455260754851766126 stripped
 GameObject:
@@ -190,17 +187,3 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 10
   attackRadius: 2
---- !u!114 &612913004595889742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7455260754851766126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75415d89555ea234d94c89c733a721d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NavMeshSnapper
-  maxSample: 5
-  snapOffset: 0.01

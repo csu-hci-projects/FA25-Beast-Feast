@@ -71,9 +71,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4617255347009006627}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6947482154157582739}
   m_SourcePrefab: {fileID: 100100000, guid: 31700ab5db1ea6b40963ae8229ce084f, type: 3}
 --- !u!1 &2427960109665900039 stripped
 GameObject:
@@ -190,17 +187,3 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6947482154157582739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2427960109665900039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75415d89555ea234d94c89c733a721d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NavMeshSnapper
-  maxSample: 5
-  snapOffset: 0.01
