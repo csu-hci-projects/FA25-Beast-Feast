@@ -37144,6 +37144,7 @@ MonoBehaviour:
   wanderRadius: 10
   wanderTimer: 5
   playerRadius: 8
+  attackRadius: 2
 --- !u!114 &282101685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37156,13 +37157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad582aa2d935404bb8917a37ddd229d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeastWander
-  walkSpeed: 1
-  turnSpeed: 360
-  wanderRadius: 4
-  arriveThreshold: 0.2
-  idleMin: 1
-  idleMax: 6
-  animator: {fileID: 0}
 --- !u!114 &282101686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52330,6 +52324,7 @@ MonoBehaviour:
   wanderRadius: 10
   wanderTimer: 5
   playerRadius: 8
+  attackRadius: 2
 --- !u!114 &397067260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52342,13 +52337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad582aa2d935404bb8917a37ddd229d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeastWander
-  walkSpeed: 1
-  turnSpeed: 360
-  wanderRadius: 4
-  arriveThreshold: 0.2
-  idleMin: 1
-  idleMax: 6
-  animator: {fileID: 0}
 --- !u!114 &397067261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63380,6 +63368,7 @@ MonoBehaviour:
   wanderRadius: 10
   wanderTimer: 5
   playerRadius: 8
+  attackRadius: 2
 --- !u!114 &482954922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63392,13 +63381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad582aa2d935404bb8917a37ddd229d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeastWander
-  walkSpeed: 1
-  turnSpeed: 360
-  wanderRadius: 4
-  arriveThreshold: 0.2
-  idleMin: 1
-  idleMax: 6
-  animator: {fileID: 0}
 --- !u!114 &482954923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154648,6 +154630,7 @@ MonoBehaviour:
   wanderRadius: 10
   wanderTimer: 5
   playerRadius: 8
+  attackRadius: 2
 --- !u!114 &1214187909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154660,13 +154643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad582aa2d935404bb8917a37ddd229d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeastWander
-  walkSpeed: 1
-  turnSpeed: 360
-  wanderRadius: 4
-  arriveThreshold: 0.2
-  idleMin: 1
-  idleMax: 6
-  animator: {fileID: 0}
 --- !u!114 &1214187910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206087,6 +206063,7 @@ MonoBehaviour:
   wanderRadius: 10
   wanderTimer: 5
   playerRadius: 8
+  attackRadius: 2
 --- !u!114 &1651789676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206099,13 +206076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad582aa2d935404bb8917a37ddd229d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeastWander
-  walkSpeed: 1
-  turnSpeed: 360
-  wanderRadius: 4
-  arriveThreshold: 0.2
-  idleMin: 1
-  idleMax: 6
-  animator: {fileID: 0}
 --- !u!114 &1651789677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266964,14 +266934,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[10].rule
       value: 
       objectReference: {fileID: 11400000, guid: b320bce13fa92b241a5005b854a8ab84, type: 2}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+      propertyPath: availableRules.Array.data[11].rule
+      value: 
+      objectReference: {fileID: 11400000, guid: e4d984978fc17524d87bbb0d6dc22738, type: 2}
+    - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[10].maxAvailability
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+      propertyPath: availableRules.Array.data[11].maxAvailability
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8050552125858465854, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}

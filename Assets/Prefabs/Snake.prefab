@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f5815a7d9cf160748905321bbf260067, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7727244
+      value: -9.566575
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5815a7d9cf160748905321bbf260067, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000047683716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5815a7d9cf160748905321bbf260067, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5111716
+      value: 2.9156065
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5815a7d9cf160748905321bbf260067, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,7 +67,10 @@ PrefabInstance:
       addedObject: {fileID: 3403616259046819921}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5815a7d9cf160748905321bbf260067, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3324601197670418591}
+      addedObject: {fileID: 8626092668920489501}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5815a7d9cf160748905321bbf260067, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2794975864251369617}
   m_SourcePrefab: {fileID: 100100000, guid: f5815a7d9cf160748905321bbf260067, type: 3}
 --- !u!1 &3844414354579832876 stripped
 GameObject:
@@ -146,7 +149,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3324601197670418591
+--- !u!114 &8626092668920489501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,9 +158,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 3844414354579832876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bd19da554367df428beaf04e91ab47b, type: 3}
+  m_Script: {fileID: 11500000, guid: 40f018a03c0fd9c4688fe94d539dfbc4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BeastControllerTest
-  moveSpeed: 2
-  turnSpeed: 10
-  rotate: 0
+  m_EditorClassIdentifier: Assembly-CSharp::PassiveAi
+  wanderRadius: 15
+  wanderTimer: 10
+  avoidRadius: 5
+  avoidStrength: 9
+--- !u!195 &-2794975864251369617
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844414354579832876}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.01
+  m_Speed: 8
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

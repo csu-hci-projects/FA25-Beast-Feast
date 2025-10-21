@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05a6290d6e702f41a5cf6cfceba05dc, type: 3}
+  m_Name: IslandPassiveCreatures
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnDecoratorRule
+  roomTypes: 255
+  enemyPrefabs:
+  - {fileID: 2427960109665900039, guid: 0c52446434de46c4e8cddb050b96c6cf, type: 3}
+  - {fileID: 3844414354579832876, guid: 50e08c5cd6ea73a408ca5e1450e515d8, type: 3}
+  - {fileID: 8217183955947039479, guid: bd8467defc93a9344916fb41854428d5, type: 3}
+  - {fileID: 2131168180440228763, guid: f0ba32eec0afee0468902c07810af0d6, type: 3}
+  - {fileID: 2019502291063945495, guid: 17b7a83e7346d8a4798f81733fe90d23, type: 3}
+  minEnemies: 1
+  maxEnemies: 3
