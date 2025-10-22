@@ -137,9 +137,9 @@ GameObject:
   - component: {fileID: 4000012323953278}
   - component: {fileID: 95000010230734170}
   - component: {fileID: 6118694914891209951}
-  - component: {fileID: 8889726456580978965}
   - component: {fileID: -3449534811226354064}
   - component: {fileID: 1779640432171271388}
+  - component: {fileID: 7674005754499087040}
   m_Layer: 0
   m_Name: Ghost_White
   m_TagString: Untagged
@@ -209,33 +209,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &8889726456580978965
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011659465104}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.008
-  m_Height: 0.04
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &-3449534811226354064
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -274,6 +251,27 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 8
   attackRadius: 2
+--- !u!65 &7674005754499087040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011659465104}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020983389, y: 0.020475363, z: 0.022337887}
+  m_Center: {x: -0.00011344776, y: 0.010600346, z: -0.0000019952656}
 --- !u!1 &1000011867156646
 GameObject:
   m_ObjectHideFlags: 0

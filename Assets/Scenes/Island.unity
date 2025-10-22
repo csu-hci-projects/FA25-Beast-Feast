@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
       propertyPath: m_LocalPosition.z
@@ -643,7 +643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940658614454091034, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.571312
+      value: 29.57131
       objectReference: {fileID: 0}
     - target: {fileID: 4940658614454091034, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -651,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940658614454091034, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 87.88077
+      value: 57.880768
       objectReference: {fileID: 0}
     - target: {fileID: 6896951740819554446, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_Name
@@ -761,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[0].rule
       value: 
-      objectReference: {fileID: 11400000, guid: 3281e133d4bef144fab8bcb9c428dd34, type: 2}
+      objectReference: {fileID: 11400000, guid: 7b10a874307bdaa4ca1808f692cdad56, type: 2}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[1].rule
       value: 

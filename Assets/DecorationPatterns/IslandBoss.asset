@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87081820ac57c744d8899f54e7476adc, type: 3}
-  m_Name: FruitTrees
+  m_Name: IslandBoss
   m_EditorClassIdentifier: Assembly-CSharp::PatternMatchingDecoratorRule
-  roomTypes: 231
-  prefab: {fileID: 5277894104168130214, guid: f29446c8bb5a51b46aa4e97ebef2f136, type: 3}
+  roomTypes: 8
+  prefab: {fileID: 1377732914286130665, guid: a19d6371806d34346a82ae12a424e6b4, type: 3}
   prefabRotation: 0
   placement:
-    array: 02000000020000000200000002000000
-    width: 2
-    height: 2
+    array: 
+    width: 0
+    height: 0
   fill:
-    array: 02000000020000000200000003000000
-    width: 2
-    height: 2
+    array: 
+    width: 0
+    height: 0
   centerHorizontally: 0
   centerVertically: 0

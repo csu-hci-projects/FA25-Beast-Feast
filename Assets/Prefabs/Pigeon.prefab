@@ -61,9 +61,6 @@ PrefabInstance:
       addedObject: {fileID: 2682232674909527322}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1116833183815453121}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7369760956874744340}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
       insertIndex: -1
@@ -71,6 +68,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
       insertIndex: -1
       addedObject: {fileID: -7068039146990414469}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5365736759656719258}
   m_SourcePrefab: {fileID: 100100000, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
 --- !u!1 &2019502291063945495 stripped
 GameObject:
@@ -99,29 +99,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &1116833183815453121
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019502291063945495}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.25
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &7369760956874744340
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,7 +122,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -187,3 +164,24 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &5365736759656719258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019502291063945495}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3215456, y: 0.48033112, z: 0.4495777}
+  m_Center: {x: 0.004366398, y: 0.25983444, z: -0.03256017}

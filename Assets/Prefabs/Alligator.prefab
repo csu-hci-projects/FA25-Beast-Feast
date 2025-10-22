@@ -61,9 +61,6 @@ PrefabInstance:
       addedObject: {fileID: 3696974176283609352}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52528edcf22f8f5449b58de3c28820af, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1976261641575133609}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52528edcf22f8f5449b58de3c28820af, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5227781745428576988}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52528edcf22f8f5449b58de3c28820af, type: 3}
       insertIndex: -1
@@ -71,6 +68,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52528edcf22f8f5449b58de3c28820af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8236264312072262777}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52528edcf22f8f5449b58de3c28820af, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4199125546803833933}
   m_SourcePrefab: {fileID: 100100000, guid: 52528edcf22f8f5449b58de3c28820af, type: 3}
 --- !u!1 &5482800351191185789 stripped
 GameObject:
@@ -99,29 +99,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &1976261641575133609
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5482800351191185789}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0.07855773, y: 0.00000023841858, z: 0}
 --- !u!54 &5227781745428576988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,7 +122,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -187,3 +164,24 @@ MonoBehaviour:
   wanderTimer: 3
   playerRadius: 10
   attackRadius: 2
+--- !u!65 &4199125546803833933
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482800351191185789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.71667707, y: 0.6639613, z: 3.1314547}
+  m_Center: {x: 0.000021278858, y: 0.33198065, z: -0.13422716}
