@@ -273039,7 +273039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6896951740819554446, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8238286750651025778, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_AgentTypeID
