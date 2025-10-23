@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f05a6290d6e702f41a5cf6cfceba05dc, type: 3}
-  m_Name: IslandBoss
+  m_Name: DungeonBoss
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnDecoratorRule
   roomTypes: 8
   enemyPrefabs:
-  - {fileID: 1377732914286130665, guid: a19d6371806d34346a82ae12a424e6b4, type: 3}
+  - {fileID: 1000013297890758, guid: 1ce05a9bb8cf8c34890ad308705a8ca4, type: 3}
   minEnemies: 1
   maxEnemies: 1
