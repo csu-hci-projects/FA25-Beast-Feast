@@ -520,10 +520,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010273486942}
   - component: {fileID: 95000011442643512}
-  - component: {fileID: 5038789418703801354}
   - component: {fileID: 3613099819343150132}
   - component: {fileID: -5398257087697727474}
   - component: {fileID: 7090555389393142115}
+  - component: {fileID: 1996134232297376012}
   m_Layer: 0
   m_Name: Bat_Red
   m_TagString: Untagged
@@ -570,29 +570,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &5038789418703801354
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011593744314}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.012
-  m_Height: 0.04
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3613099819343150132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -616,7 +593,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -658,6 +635,27 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 8
   attackRadius: 2
+--- !u!65 &1996134232297376012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011593744314}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0669653, y: 0.026439412, z: 0.0237231}
+  m_Center: {x: 0.00063112803, y: 0.014903411, z: -0.0008285378}
 --- !u!1 &1000011643250032
 GameObject:
   m_ObjectHideFlags: 0

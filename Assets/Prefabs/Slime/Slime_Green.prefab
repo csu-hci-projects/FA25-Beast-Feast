@@ -556,9 +556,9 @@ GameObject:
   - component: {fileID: 4000010692086626}
   - component: {fileID: 95000014196578838}
   - component: {fileID: 2128376522753797320}
-  - component: {fileID: 5900686696140684143}
   - component: {fileID: 5423544241269778295}
   - component: {fileID: 7445928040406665855}
+  - component: {fileID: 2426982090373142631}
   m_Layer: 0
   m_Name: Slime_Green
   m_TagString: Untagged
@@ -628,33 +628,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &5900686696140684143
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012979649092}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.011
-  m_Height: 0.034
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5423544241269778295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAi
   wanderRadius: 20
   wanderTimer: 5
+  playerRadius: 8
+  attackRadius: 2
 --- !u!195 &7445928040406665855
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -691,6 +670,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &2426982090373142631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012979649092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.023788096, y: 0.019562831, z: 0.02490534}
+  m_Center: {x: -0.00024597763, y: 0.010327851, z: 0.0011082565}
 --- !u!1 &1000013817168944
 GameObject:
   m_ObjectHideFlags: 0

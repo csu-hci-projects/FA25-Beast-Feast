@@ -1212,9 +1212,9 @@ GameObject:
   - component: {fileID: 4000013189255144}
   - component: {fileID: 95000012289870092}
   - component: {fileID: 1332873756969481391}
-  - component: {fileID: 1195681929072278506}
   - component: {fileID: 7812934066717457837}
   - component: {fileID: 7957443733757218126}
+  - component: {fileID: 6490581927031999900}
   m_Layer: 0
   m_Name: Bat_Green
   m_TagString: Untagged
@@ -1284,33 +1284,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1195681929072278506
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000013827195344}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.01
-  m_Height: 0.04
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7812934066717457837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,6 +1326,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &6490581927031999900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013827195344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.06819498, y: 0.027159376, z: 0.0236945}
+  m_Center: {x: -0.0016687036, y: 0.01386826, z: 0.0004179786}
 --- !u!1 &1000013833150240
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnDecoratorRule
   roomTypes: 241
   enemyPrefabs:
-  - {fileID: 1377732914286130665, guid: a19d6371806d34346a82ae12a424e6b4, type: 3}
   - {fileID: 7455260754851766126, guid: 7d8589dde21754e48b5f50a7300237fb, type: 3}
   - {fileID: 5482800351191185789, guid: df781d703fa52904b83853b57e3c7192, type: 3}
   - {fileID: 7038212977636597747, guid: 2267e0096b56f894996261bf0d5c1274, type: 3}
