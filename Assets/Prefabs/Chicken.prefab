@@ -684,7 +684,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 7038212977636597747}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.01
+  m_Radius: 0.1
   m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
@@ -730,10 +730,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 0.45642865, y: 0.7382257, z: 0.5837083}
-  m_Center: {x: -0.00020366907, y: 0.5016494, z: -0.012681246}
+  m_Size: {x: 0.45642865, y: 0.6754386, z: 0.5837083}
+  m_Center: {x: -0.00020366907, y: 0.53304297, z: -0.012681246}
 --- !u!1 &7323084123068054778
 GameObject:
   m_ObjectHideFlags: 0

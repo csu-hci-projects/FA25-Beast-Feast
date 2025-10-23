@@ -14,13 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnDecoratorRule
   roomTypes: 241
   enemyPrefabs:
-  - {fileID: 1000013297890758, guid: 1ce05a9bb8cf8c34890ad308705a8ca4, type: 3}
+  - {fileID: 1000012979649092, guid: 9c8e6b52a146b2d4994f42592a19bba0, type: 3}
   - {fileID: 1000013767804016, guid: c334a7c41936e764391ae93ab0e1981d, type: 3}
   - {fileID: 1000011296433714, guid: 30d420b7cf5d3ad40b5c02db6d73287a, type: 3}
   - {fileID: 1000011593744314, guid: 67f0474ce7d8d344fa04ba561d36d761, type: 3}
-  - {fileID: 5482800351191185789, guid: df781d703fa52904b83853b57e3c7192, type: 3}
-  - {fileID: 1377732914286130665, guid: a19d6371806d34346a82ae12a424e6b4, type: 3}
-  - {fileID: 7038212977636597747, guid: 2267e0096b56f894996261bf0d5c1274, type: 3}
-  - {fileID: 7455260754851766126, guid: 7d8589dde21754e48b5f50a7300237fb, type: 3}
   minEnemies: 1
   maxEnemies: 3
