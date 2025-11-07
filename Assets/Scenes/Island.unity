@@ -503,6 +503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: sizeText
+      value: 
+      objectReference: {fileID: 812318873}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -605,6 +609,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+--- !u!114 &812318873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1154861645898424221, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 812318872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
