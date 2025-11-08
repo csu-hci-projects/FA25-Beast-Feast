@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyAi : MonoBehaviour
 {
@@ -7,26 +8,36 @@ public class EnemyAi : MonoBehaviour
     [SerializeField] float wanderTimer = 5f;
     [SerializeField] float playerRadius = 8f;
     [SerializeField] float attackRadius = 2f;
+    [SerializeField] float timeBetweenAttacks = 1f;
 
     private NavMeshAgent agent;
     private float timer;
     private Transform player;
+    private GameObject playerObject;
     private Animator animator;
+    private float attackTimer;
+
+    private SizeStats enemyStats;
+    private SizeStats playerStats;
 
     void OnEnable()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        enemyStats = GetComponent<SizeStats>();
         timer = wanderTimer;
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        attackTimer = timeBetweenAttacks;
+        playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
         {
             player = playerObject.transform;
+            playerStats = playerObject.GetComponent<SizeStats>();
         }
     }
 
     void Update()
     {
+        attackTimer -= Time.deltaTime;
         if (player != null)
         {
             float distance = Vector3.Distance(transform.position, player.position);
@@ -37,8 +48,19 @@ public class EnemyAi : MonoBehaviour
 
                 if (distance <= attackRadius)
                 {
-                    agent.isStopped = true;
-                    animator.SetTrigger("AttackTrigger");
+                    if (attackTimer <= 0)
+                    {
+                        agent.isStopped = true;
+                        animator.SetTrigger("AttackTrigger");
+                        bool eatplayer = enemyStats.TryEatPlayer(playerStats.GetSize());
+                        attackTimer = timeBetweenAttacks;
+                        if (eatplayer)
+                        {
+                            Debug.Log("GAME OVER!");
+                            SceneManager.LoadScene("StartMenu");
+                        }
+                    }
+
                 }
                 else
                 {

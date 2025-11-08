@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snake
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5815a7d9cf160748905321bbf260067, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -95,6 +99,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5815a7d9cf160748905321bbf260067, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6348756329976314598}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5815a7d9cf160748905321bbf260067, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 176858205203507814}
   m_SourcePrefab: {fileID: 100100000, guid: f5815a7d9cf160748905321bbf260067, type: 3}
 --- !u!1 &3844414354579832876 stripped
 GameObject:
@@ -209,3 +216,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7577922, y: 0.31735098, z: 1.1144055}
   m_Center: {x: -0.27648607, y: 0.2329433, z: -0.37797278}
+--- !u!114 &176858205203507814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844414354579832876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece7ad432ea397948a0f35e1647fcdb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeStats
+  size: 3

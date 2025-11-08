@@ -559,9 +559,10 @@ GameObject:
   - component: {fileID: 5423544241269778295}
   - component: {fileID: 7445928040406665855}
   - component: {fileID: 2426982090373142631}
+  - component: {fileID: 1092651786160720868}
   m_Layer: 0
   m_Name: Slime_Green
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,6 +649,7 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 8
   attackRadius: 2
+  timeBetweenAttacks: 1
 --- !u!195 &7445928040406665855
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -691,6 +693,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.023788096, y: 0.01647569, z: 0.02490534}
   m_Center: {x: -0.00024597763, y: 0.011871416, z: 0.0011082565}
+--- !u!114 &1092651786160720868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012979649092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece7ad432ea397948a0f35e1647fcdb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeStats
+  size: 3
 --- !u!1 &1000013817168944
 GameObject:
   m_ObjectHideFlags: 0

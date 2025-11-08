@@ -397,9 +397,10 @@ GameObject:
   - component: {fileID: 6558915465681510509}
   - component: {fileID: 6512858929155337311}
   - component: {fileID: 7763180184691897819}
+  - component: {fileID: 7889139946096332084}
   m_Layer: 0
   m_Name: Slime_Red
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,6 +509,7 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 10
   attackRadius: 4
+  timeBetweenAttacks: 1
 --- !u!65 &7763180184691897819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -529,6 +531,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.021008765, y: 0.012754304, z: 0.020845363}
   m_Center: {x: 0.00059226196, y: 0.0103524355, z: 0.00035140594}
+--- !u!114 &7889139946096332084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013297890758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece7ad432ea397948a0f35e1647fcdb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeStats
+  size: 10
 --- !u!1 &1000013341563594
 GameObject:
   m_ObjectHideFlags: 0

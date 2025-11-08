@@ -524,9 +524,10 @@ GameObject:
   - component: {fileID: -5398257087697727474}
   - component: {fileID: 7090555389393142115}
   - component: {fileID: 1996134232297376012}
+  - component: {fileID: 544117758902864242}
   m_Layer: 0
   m_Name: Bat_Red
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -635,6 +636,7 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 8
   attackRadius: 2
+  timeBetweenAttacks: 1
 --- !u!65 &1996134232297376012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,6 +658,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0669653, y: 0.020668816, z: 0.0237231}
   m_Center: {x: 0.00063112803, y: 0.017788714, z: -0.0008285378}
+--- !u!114 &544117758902864242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011593744314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece7ad432ea397948a0f35e1647fcdb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeStats
+  size: 7
 --- !u!1 &1000011643250032
 GameObject:
   m_ObjectHideFlags: 0

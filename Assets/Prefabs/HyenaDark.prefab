@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HyenaDark
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71,6 +75,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5654203194841281496}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429290989248258417}
   m_SourcePrefab: {fileID: 100100000, guid: 1947e2710ccc99c42aa65e0286a0f1dc, type: 3}
 --- !u!1 &7455260754851766126 stripped
 GameObject:
@@ -164,6 +171,7 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 10
   attackRadius: 2
+  timeBetweenAttacks: 1
 --- !u!65 &5654203194841281496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -185,3 +193,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.1040938, z: 2.2009945}
   m_Center: {x: 0, y: 0.86302197, z: 0.1331408}
+--- !u!114 &429290989248258417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7455260754851766126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece7ad432ea397948a0f35e1647fcdb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeStats
+  size: 7

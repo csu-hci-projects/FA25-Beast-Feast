@@ -602,9 +602,10 @@ GameObject:
   - component: {fileID: 5801212521827274641}
   - component: {fileID: -9119409293848075501}
   - component: {fileID: 1860414044287474514}
+  - component: {fileID: 5822447640981247156}
   m_Layer: 0
   m_Name: Chicken
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -713,6 +714,7 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 8
   attackRadius: 2
+  timeBetweenAttacks: 1
 --- !u!65 &1860414044287474514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -734,6 +736,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.45642865, y: 0.6754386, z: 0.5837083}
   m_Center: {x: -0.00020366907, y: 0.53304297, z: -0.012681246}
+--- !u!114 &5822447640981247156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038212977636597747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece7ad432ea397948a0f35e1647fcdb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeStats
+  size: 3
 --- !u!1 &7323084123068054778
 GameObject:
   m_ObjectHideFlags: 0
