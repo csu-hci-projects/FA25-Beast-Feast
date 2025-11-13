@@ -118,6 +118,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EmissiveAmount: 0
     - _Emissive_Amount: 0
     - _Enable_Breeze: 1
@@ -196,6 +197,7 @@ Material:
     - _SnowSwitch5: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Strong_Wind_Frequency: 0.5
     - _Strong_Wind_Strength: 0.2
     - _Surface: 0

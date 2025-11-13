@@ -499,6 +499,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2704034459007170321, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -179.57574
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704034459007170321, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 162.47931
+      objectReference: {fileID: 0}
     - target: {fileID: 6896951740819554446, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_Name
       value: Player
@@ -888,7 +896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[0].rule
@@ -915,6 +923,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6210d0b390b586d4289dbad3b0cce7eb, type: 2}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+      propertyPath: availableRules.Array.data[6].rule
+      value: 
+      objectReference: {fileID: 11400000, guid: c64f8069f17d695408ccaebd3553390c, type: 2}
+    - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+      propertyPath: availableRules.Array.data[7].rule
+      value: 
+      objectReference: {fileID: 11400000, guid: b3969a3e602276d49b0129a3280830ae, type: 2}
+    - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[0].maxAvailability
       value: 1
       objectReference: {fileID: 0}
@@ -936,6 +952,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[5].maxAvailability
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+      propertyPath: availableRules.Array.data[6].maxAvailability
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+      propertyPath: availableRules.Array.data[7].maxAvailability
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7408078817375431788, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
