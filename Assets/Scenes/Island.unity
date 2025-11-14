@@ -455,10 +455,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1035113433376235150, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1957722114914638361, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 169.20303
@@ -499,14 +495,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2704034459007170321, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -179.57574
-      objectReference: {fileID: 0}
-    - target: {fileID: 2704034459007170321, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 162.47931
-      objectReference: {fileID: 0}
+    - target: {fileID: 6337232261497740556, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: sizeText
+      value: 
+      objectReference: {fileID: 812318873}
     - target: {fileID: 6896951740819554446, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: m_Name
       value: Player
@@ -515,6 +507,14 @@ PrefabInstance:
       propertyPath: sizeText
       value: 
       objectReference: {fileID: 812318873}
+    - target: {fileID: 8093272553208575928, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 2057594965}
+    - target: {fileID: 8093272553208575928, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 1589588422}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -610,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 741397046948702601, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
       propertyPath: m_Name
-      value: Exit Level Button
+      value: Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -677,6 +677,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589588422 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7771476807620226130, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 812318872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1753500486
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,6 +3920,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
+--- !u!114 &2057594965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7100661271042078365, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 812318872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

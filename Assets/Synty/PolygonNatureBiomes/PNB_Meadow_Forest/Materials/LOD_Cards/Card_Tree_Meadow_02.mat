@@ -36,14 +36,14 @@ Material:
   m_Name: Card_Tree_Meadow_02
   m_Shader: {fileID: -6465566751694194690, guid: 9b98a126c8d4d7a4baeb81b16e4f7b97, type: 3}
   m_Parent: {fileID: 2100000, guid: a01cda932070b964d85e5835371a3cc6, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
   - _ALPHATEST_ON
   m_InvalidKeywords:
   - _CARDTOGGLE_ON
   - _EMISSION
   - _LEAFFLATCOLOURSWITCH_ON
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1

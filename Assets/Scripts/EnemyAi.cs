@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -57,7 +58,9 @@ public class EnemyAi : MonoBehaviour
                         if (eatplayer)
                         {
                             Debug.Log("GAME OVER!");
-                            SceneManager.LoadScene("StartMenu");
+                            var gameOverScreen = player.GetComponent<GameOverScreen>();
+                            gameOverScreen.GameOver();
+
                         }
                     }
 
