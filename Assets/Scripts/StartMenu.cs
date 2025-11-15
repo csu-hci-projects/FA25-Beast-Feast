@@ -15,6 +15,11 @@ public class StartMenu : MonoBehaviour
 
     public void Exit()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
+
 }
