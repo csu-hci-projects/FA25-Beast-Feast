@@ -1,20 +1,13 @@
 using System.Drawing;
-using NUnit.Framework.Internal;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class SizeStats : MonoBehaviour
 {
     [SerializeField] int size = 0;
-    [SerializeField] TextMeshProUGUI sizeText;
 
     void Start()
     {
-        if(gameObject.tag == "Player")
-        {
-            updateSize();
-        }
+        
     }
 
     public bool TryEatEnemy(int enemySize)
@@ -22,15 +15,7 @@ public class SizeStats : MonoBehaviour
         
         if (size >= enemySize)
         {
-            if (size < 10)
-            {
-                size++;
-                if(gameObject.tag == "Player")
-                {
-                    updateSize();
-                }
-  
-            } 
+            if (size < 10) size++;
             return true;
         }
         else
@@ -58,10 +43,5 @@ public class SizeStats : MonoBehaviour
     public int GetSize()
     {
         return this.size;
-    }
-
-    public void updateSize()
-    {
-        sizeText.text = "Current Size: " + size;
     }
 }

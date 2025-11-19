@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 10
 --- !u!114 &-1800269818234764363
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -40,8 +40,9 @@ Material:
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
-  m_LightmapFlags: 0
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -51,6 +52,7 @@ Material:
   - ALWAYS
   - SHADOWCASTER
   - DepthOnly
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -105,7 +107,7 @@ Material:
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0
     - _DstBlend: 10
-    - _DstBlendAlpha: 0
+    - _DstBlendAlpha: 10
     - _EmissionEnabled: 0
     - _Enable_Camera_Fade: 0
     - _Enable_Emission: 1
@@ -143,3 +145,4 @@ Material:
     - _Emission_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 0}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
