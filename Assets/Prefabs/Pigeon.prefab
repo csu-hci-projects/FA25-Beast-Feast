@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6505115902542270752}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825138504094589081}
   m_SourcePrefab: {fileID: 100100000, guid: 295c427a5580d2e42af0b4e3bfe6babc, type: 3}
 --- !u!1 &2019502291063945495 stripped
 GameObject:
@@ -205,3 +208,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SizeStats
   size: 1
+--- !u!114 &825138504094589081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019502291063945495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29bbe8a18ea9bb4f81f1525b4871f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeIndicator
+  indicatorPrefab: {fileID: 1827804895462243176, guid: d02b4800f7603a74b966deb2df969ffd, type: 3}
