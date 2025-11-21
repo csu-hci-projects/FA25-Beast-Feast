@@ -55,4 +55,12 @@ public class GameOverScreen : MonoBehaviour
         SceneManager.LoadScene("StartMenu");
         
     }
+
+    public void Win()
+    {
+        StartCoroutine(FadeImageAlpha(1f));
+        gameOverText.text = "You ate the larget beast! You Win!";
+        gameOverText.enabled = true;
+        StartCoroutine(DelayedAction(3.0f)); // Call DelayedAction after 3 seconds 
+    }
 }

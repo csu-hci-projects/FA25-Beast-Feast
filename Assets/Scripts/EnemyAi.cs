@@ -56,8 +56,7 @@ public class EnemyAi : MonoBehaviour
                         attackTimer = timeBetweenAttacks;
                         if (eatplayer)
                         {
-                            Debug.Log("GAME OVER!");
-                            SceneManager.LoadScene("StartMenu");
+                            playerObject.GetComponent<GameOverScreen>().GameOver();
                         }
                     }
 
