@@ -91,6 +91,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0800842f4eb397646a4bd17bdb797137, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9135348892092811468}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0800842f4eb397646a4bd17bdb797137, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1840504760020674363}
   m_SourcePrefab: {fileID: 100100000, guid: 0800842f4eb397646a4bd17bdb797137, type: 3}
 --- !u!1 &1377732914286130665 stripped
 GameObject:
@@ -197,3 +200,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SizeStats
   size: 10
+--- !u!114 &-1840504760020674363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377732914286130665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29bbe8a18ea9bb4f81f1525b4871f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeIndicator
+  indicatorPrefab: {fileID: 1827804895462243176, guid: d02b4800f7603a74b966deb2df969ffd, type: 3}
+  isDungeonEnemy: 0

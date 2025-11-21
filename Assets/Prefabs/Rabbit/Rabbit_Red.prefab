@@ -725,6 +725,7 @@ GameObject:
   - component: {fileID: 6003827760648703357}
   - component: {fileID: 6582591736510809968}
   - component: {fileID: 2417980018847726482}
+  - component: {fileID: 6728710827933815443}
   m_Layer: 0
   m_Name: Rabbit_Red
   m_TagString: Enemy
@@ -871,6 +872,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SizeStats
   size: 4
+--- !u!114 &6728710827933815443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013767804016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29bbe8a18ea9bb4f81f1525b4871f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SizeIndicator
+  indicatorPrefab: {fileID: 1827804895462243176, guid: d02b4800f7603a74b966deb2df969ffd, type: 3}
+  isDungeonEnemy: 1
 --- !u!1 &1000013990573300
 GameObject:
   m_ObjectHideFlags: 0
