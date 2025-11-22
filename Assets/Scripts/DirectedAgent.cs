@@ -68,6 +68,10 @@ public class DirectedAgent : MonoBehaviour
                 bool eatEnemy = playerStats.TryEatEnemy(enemy.GetComponent<SizeStats>().GetSize());
                 if (eatEnemy)
                 {
+                if (enemy.GetComponent<SizeStats>().GetIsBoss())
+                {
+                    GetComponent<GameOverScreen>().Win();
+                }
                     Destroy(enemy);
                 }
             }

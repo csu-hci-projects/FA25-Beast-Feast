@@ -545,6 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SizeStats
   size: 10
+  isBoss: 1
 --- !u!114 &9086253949128417387
 MonoBehaviour:
   m_ObjectHideFlags: 0
