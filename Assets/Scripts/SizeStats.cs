@@ -5,7 +5,6 @@ public class SizeStats : MonoBehaviour
     [SerializeField] int size = 1;       // start at size 1 instead of 0
     [SerializeField] float baseScale = 0.6f;
     [SerializeField] float scalePerSize = 0.15f;
-    [SerializeField] int size = 0;
     [SerializeField] bool isBoss = false;
 
     void Start()
@@ -54,9 +53,7 @@ public class SizeStats : MonoBehaviour
     {
         float newScale = baseScale + (size - 1) * scalePerSize;
         transform.localScale = Vector3.one * newScale;
-    }
-}
-    
+    }    
     public bool GetIsBoss()
     {
         return isBoss;
