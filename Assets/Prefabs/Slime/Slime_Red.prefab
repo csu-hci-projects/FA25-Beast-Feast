@@ -510,7 +510,7 @@ MonoBehaviour:
   wanderTimer: 5
   playerRadius: 10
   attackRadius: 4
-  timeBetweenAttacks: 1
+  timeBetweenAttacks: 2
 --- !u!65 &7763180184691897819
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -2,13 +2,17 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 
 public class DirectedAgent : MonoBehaviour
 {
     NavMeshAgent agent;
     Animator animator;
     [SerializeField] TextMeshProUGUI sizeText;
-    [SerializeField] float attackRadius = 3f;
+    [SerializeField] private List<Image> hearts;
+    [SerializeField] private Sprite fullHeart; 
+    [SerializeField] private Sprite emptyHeart;
+    [SerializeField] float attackRadius = 5f;
 
     private SizeStats playerStats;
 
@@ -57,7 +61,7 @@ public class DirectedAgent : MonoBehaviour
         // Animation blend (same parameter as before)
         float speed = inputDir.magnitude * agent.speed;
         animator.SetFloat("forwardSpeed", speed);
-
+        UpdateHealth();
     }
 
     private void ProcessAttack()
@@ -96,5 +100,17 @@ public class DirectedAgent : MonoBehaviour
     private void SetSizeText()
     {
         sizeText.text = "Current Size: " + playerStats.GetSize().ToString();
+    }
+
+    private void UpdateHealth()
+    {
+        int health = playerStats.GetHealth();
+        for (int i = 0; i < hearts.Count; i++)
+        {
+            if (i < health)
+                hearts[i].sprite = fullHeart;
+            else
+                hearts[i].sprite = emptyHeart;
+        }
     }
 }

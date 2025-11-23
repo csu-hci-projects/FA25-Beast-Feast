@@ -518,6 +518,30 @@ PrefabInstance:
       propertyPath: sizeText
       value: 
       objectReference: {fileID: 4840268001022068426}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: 12e167d9b2431fb499aba9d922f375de, type: 3}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f495f151e5aff24ca45456ceb9f5557, type: 3}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: hearts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: 'hearts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4840268001022068429}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: 'hearts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4840268001022068428}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: 'hearts.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4840268001022068427}
     - target: {fileID: 8093272553208575928, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: gameOverText
       value: 
@@ -700,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 741397046948702601, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
       propertyPath: m_Name
-      value: Exit Level Button
+      value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 6999977606723963777, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
       propertyPath: m_SizeDelta.x
@@ -715,7 +739,8 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3440652017561606529, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
@@ -730,6 +755,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &4840268001022068427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2238713141940819516, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 4840268001022068425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &4840268001022068428 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6959112301183626327, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 4840268001022068425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &4840268001022068429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8153329762887581812, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 4840268001022068425}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &6129552061675761195
 PrefabInstance:
   m_ObjectHideFlags: 0

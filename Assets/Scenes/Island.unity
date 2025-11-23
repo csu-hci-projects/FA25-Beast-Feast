@@ -507,6 +507,30 @@ PrefabInstance:
       propertyPath: sizeText
       value: 
       objectReference: {fileID: 812318873}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: 12e167d9b2431fb499aba9d922f375de, type: 3}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f495f151e5aff24ca45456ceb9f5557, type: 3}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: hearts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: 'hearts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 812318876}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: 'hearts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 812318875}
+    - target: {fileID: 7820504799349173061, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
+      propertyPath: 'hearts.Array.data[2]'
+      value: 
+      objectReference: {fileID: 812318874}
     - target: {fileID: 8093272553208575928, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: gameOverText
       value: 
@@ -628,6 +652,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &812318874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2238713141940819516, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 812318872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &812318875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6959112301183626327, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 812318872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &812318876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8153329762887581812, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+  m_PrefabInstance: {fileID: 812318872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.size
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[0].rule
@@ -936,7 +993,7 @@ PrefabInstance:
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[6].rule
       value: 
-      objectReference: {fileID: 11400000, guid: c64f8069f17d695408ccaebd3553390c, type: 2}
+      objectReference: {fileID: 11400000, guid: b3969a3e602276d49b0129a3280830ae, type: 2}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[7].rule
       value: 
@@ -967,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[6].maxAvailability
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6820128543354021549, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
       propertyPath: availableRules.Array.data[7].maxAvailability
