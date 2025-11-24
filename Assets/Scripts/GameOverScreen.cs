@@ -59,7 +59,7 @@ public class GameOverScreen : MonoBehaviour
     public void Win()
     {
         StartCoroutine(FadeImageAlpha(1f));
-        gameOverText.text = "You ate the larget beast! You Win!";
+        gameOverText.text = "You Win!";
         gameOverText.enabled = true;
         StartCoroutine(DelayedAction(3.0f)); // Call DelayedAction after 3 seconds 
     }

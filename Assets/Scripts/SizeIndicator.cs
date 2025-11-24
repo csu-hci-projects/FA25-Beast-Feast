@@ -60,7 +60,7 @@ public class SizeIndicator : MonoBehaviour
             else
                 indicatorRenderer.material.color = Color.yellow;
 
-            Debug.Log("Showing Indicator!");
+            // Debug.Log("Showing Indicator!");
         }
 
     }

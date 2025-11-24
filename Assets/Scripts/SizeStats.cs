@@ -5,6 +5,7 @@ public class SizeStats : MonoBehaviour
 {
     [SerializeField] int size = 0;
     [SerializeField] bool isBoss = false;
+    private int health = 3;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class SizeStats : MonoBehaviour
 
     public bool TryEatPlayer(int playerSize)
     {
-        if (playerSize >= size)
+        if (playerSize > size)
         {
             Debug.Log("Player too big to eat!");
             return false;
@@ -43,11 +44,21 @@ public class SizeStats : MonoBehaviour
     
     public int GetSize()
     {
-        return this.size;
+        return size;
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
     
     public bool GetIsBoss()
     {
         return isBoss;
+    }
+
+    public void DecreaseHealth()
+    {
+        health--;
     }
 }

@@ -56,7 +56,11 @@ public class EnemyAi : MonoBehaviour
                         attackTimer = timeBetweenAttacks;
                         if (eatplayer)
                         {
-                            playerObject.GetComponent<GameOverScreen>().GameOver();
+                            playerStats.DecreaseHealth();
+                            if (playerStats.GetHealth() == 0)
+                            {
+                                playerObject.GetComponent<GameOverScreen>().GameOver();
+                            }
                         }
                     }
 
