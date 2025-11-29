@@ -13,6 +13,13 @@ public class DirectedAgent : MonoBehaviour
     [SerializeField] private Sprite fullHeart; 
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] float attackRadius = 5f;
+    [SerializeField] private AudioSource eatSfxSource;
+    [SerializeField] private AudioClip eatSfxClip;
+    private int previousHealth;
+    [SerializeField] private AudioSource heartSfxSource;
+    [SerializeField] private AudioClip heartLostClip;
+
+
 
     private SizeStats playerStats;
 
@@ -27,6 +34,7 @@ public class DirectedAgent : MonoBehaviour
     void Start()
     {
         SetSizeText();
+        previousHealth = playerStats.GetHealth();
     }
 
     void Update()
@@ -67,19 +75,29 @@ public class DirectedAgent : MonoBehaviour
     private void ProcessAttack()
     {
         GameObject[] enemies = GetEnemiesInAttackRange();
-            foreach (GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
+        {
+            bool eatEnemy = playerStats.TryEatEnemy(enemy.GetComponent<SizeStats>().GetSize());
+            if (eatEnemy)
             {
-                bool eatEnemy = playerStats.TryEatEnemy(enemy.GetComponent<SizeStats>().GetSize());
-                if (eatEnemy)
-                {
                 if (enemy.GetComponent<SizeStats>().GetIsBoss())
                 {
                     GetComponent<GameOverScreen>().Win();
                 }
-                    Destroy(enemy);
+
+                // Play eat sound from halfway through
+                if (eatSfxSource && eatSfxClip)
+                {
+                    eatSfxSource.clip = eatSfxClip;
+                    eatSfxSource.time = eatSfxClip.length / 2f;
+                    eatSfxSource.Play();
                 }
+
+                Destroy(enemy);
             }
+        }
     }
+
 
     private GameObject[] GetEnemiesInAttackRange()
     {
@@ -105,12 +123,19 @@ public class DirectedAgent : MonoBehaviour
     private void UpdateHealth()
     {
         int health = playerStats.GetHealth();
+
+        if (health < previousHealth) // heart lost
+        {
+            if (heartSfxSource && heartLostClip)
+                heartSfxSource.PlayOneShot(heartLostClip);
+        }
+
         for (int i = 0; i < hearts.Count; i++)
         {
-            if (i < health)
-                hearts[i].sprite = fullHeart;
-            else
-                hearts[i].sprite = emptyHeart;
+            hearts[i].sprite = i < health ? fullHeart : emptyHeart;
         }
+
+        previousHealth = health; // update for next frame
     }
+
 }
