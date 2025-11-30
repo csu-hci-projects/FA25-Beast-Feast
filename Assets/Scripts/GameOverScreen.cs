@@ -8,15 +8,17 @@ using UnityEngine.UI;
 public class GameOverScreen : MonoBehaviour
 {
     [SerializeField] Image gameOverScreen;
-    [SerializeField] TextMeshProUGUI gameOverText;
+    //[SerializeField] TextMeshProUGUI gameOverText;
     
     public float fadeDuration = 1.0f;
 
     void Start()
     {
         // Example: Start fading out the image
+        
+        SetImageAlpha(0f);
         StartCoroutine(FadeImageAlpha(0f));
-        gameOverText.enabled = false;
+        //gameOverText.enabled = false;
     }
 
     IEnumerator FadeImageAlpha(float targetAlpha)
@@ -45,7 +47,7 @@ public class GameOverScreen : MonoBehaviour
     public void GameOver()
     {
         StartCoroutine(FadeImageAlpha(1f));
-        gameOverText.enabled = true;
+        //gameOverText.enabled = true;
         StartCoroutine(DelayedAction(3.0f)); // Call DelayedAction after 3 seconds
     }
 
@@ -59,8 +61,8 @@ public class GameOverScreen : MonoBehaviour
     public void Win()
     {
         StartCoroutine(FadeImageAlpha(1f));
-        gameOverText.text = "You Win!";
-        gameOverText.enabled = true;
+        //gameOverText.text = "You Win!";
+        //gameOverText.enabled = true;
         StartCoroutine(DelayedAction(3.0f)); // Call DelayedAction after 3 seconds 
     }
 }
