@@ -8,7 +8,10 @@ using UnityEngine.UI;
 public class GameOverScreen : MonoBehaviour
 {
     [SerializeField] Image gameOverScreen;
-    //[SerializeField] TextMeshProUGUI gameOverText;
+    [SerializeField] Image winScreen;
+     private AudioSource source;
+    [SerializeField] private AudioClip winClip;
+    [SerializeField] private AudioClip loseClip;
     
     public float fadeDuration = 1.0f;
 
@@ -17,13 +20,21 @@ public class GameOverScreen : MonoBehaviour
         // Example: Start fading out the image
         
         SetImageAlpha(0f);
-        StartCoroutine(FadeImageAlpha(0f));
+        StartCoroutine(FadeImageAlpha(0f, false));
+        StartCoroutine(FadeImageAlpha(0f, true));
+        source = GetComponent<AudioSource>();
         //gameOverText.enabled = false;
     }
 
-    IEnumerator FadeImageAlpha(float targetAlpha)
+    IEnumerator FadeImageAlpha(float targetAlpha, bool win)
     {
-        float startAlpha = gameOverScreen.color.a;
+        float startAlpha;
+        if (win) {
+            startAlpha = winScreen.color.a;
+        } else
+        {
+            startAlpha = gameOverScreen.color.a;
+        }
         float elapsedTime = 0f;
 
         while (elapsedTime < fadeDuration)
@@ -42,11 +53,16 @@ public class GameOverScreen : MonoBehaviour
         Color currentColor = gameOverScreen.color;
         Color newColor = new Color(currentColor.r, currentColor.g, currentColor.b, newAlpha);
         gameOverScreen.color = newColor;
+        winScreen.color = newColor;
     }
 
     public void GameOver()
     {
-        StartCoroutine(FadeImageAlpha(1f));
+        winScreen.enabled = false;
+        gameOverScreen.enabled = true;
+        StartCoroutine(FadeImageAlpha(1f, false));
+        source.clip = loseClip;
+        source.Play();
         //gameOverText.enabled = true;
         StartCoroutine(DelayedAction(3.0f)); // Call DelayedAction after 3 seconds
     }
@@ -60,9 +76,11 @@ public class GameOverScreen : MonoBehaviour
 
     public void Win()
     {
-        StartCoroutine(FadeImageAlpha(1f));
-        //gameOverText.text = "You Win!";
-        //gameOverText.enabled = true;
+        gameOverScreen.enabled = false;
+        winScreen.enabled = true;
+        StartCoroutine(FadeImageAlpha(1f, true));
+        source.clip = winClip;
+        source.Play();
         StartCoroutine(DelayedAction(3.0f)); // Call DelayedAction after 3 seconds 
     }
 }

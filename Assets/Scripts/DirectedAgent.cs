@@ -83,6 +83,7 @@ public class DirectedAgent : MonoBehaviour
                 if (enemy.GetComponent<SizeStats>().GetIsBoss())
                 {
                     GetComponent<GameOverScreen>().Win();
+                    break;
                 }
 
                 // Play eat sound from halfway through
