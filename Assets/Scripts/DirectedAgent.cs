@@ -82,6 +82,7 @@ public class DirectedAgent : MonoBehaviour
             {
                 if (enemy.GetComponent<SizeStats>().GetIsBoss())
                 {
+                    Destroy(enemy);
                     GetComponent<GameOverScreen>().Win();
                     break;
                 }
