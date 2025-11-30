@@ -15,7 +15,8 @@ public class GameOverScreen : MonoBehaviour
     void Start()
     {
         // Example: Start fading out the image
-        StartCoroutine(FadeImageAlpha(0f));
+        //StartCoroutine(FadeImageAlpha(0f));
+        SetImageAlpha(0f);
         gameOverText.enabled = false;
     }
 
