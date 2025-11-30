@@ -652,7 +652,7 @@ PrefabInstance:
     - target: {fileID: 8093272553208575928, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: gameOverText
       value: 
-      objectReference: {fileID: 2057594965}
+      objectReference: {fileID: 0}
     - target: {fileID: 8093272553208575928, guid: e5472608bccc1e9449225a73790b18d2, type: 3}
       propertyPath: gameOverScreen
       value: 
@@ -757,8 +757,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7771476807620226130, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8124b1acd05404c489751ec412505174, type: 3}
+    - target: {fileID: 7771476807620226130, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771476807620226130, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771476807620226130, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2495082819215130867, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
@@ -4098,17 +4115,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49af354a45f1e9c47ae6998b325997be, type: 3}
---- !u!114 &2057594965 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7100661271042078365, guid: eb5c8cd4d1404d247bf8864371e9ed13, type: 3}
-  m_PrefabInstance: {fileID: 812318872}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
