@@ -17,3 +17,10 @@ Explore with caution! Every creature is a potential meal or a potential threat. 
     * **Green** - You can eat the creature, and it *cannot* eat you.
     * **Yellow** – You can eat the creature, but it can also hurt you, costing one hit point.
     * **Red** – You cannot eat the creature, but it can *eat* you.
+ 
+## How To Start The Game
+If playing Beast Feast throught the Unity editor, you will need to navigate to the correct starting scene.
+
+To do this you will need to go through the following folder structure: Assets > Scenes.
+
+Once inside the Scenes folder, open StartMenu. Now you can play!
